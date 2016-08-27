@@ -1,0 +1,204 @@
+﻿*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 20px;
+}
+@media screen and (min-width: 375px) and (max-width: 500px){
+    html{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 375px) and (min-width: 320px){
+    html{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 320px){
+    html{
+        font-size: 15px;
+    }
+}
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
+body{color:#333; font-size:0.8rem;font-family:"Microsoft YaHei"}
+ul,ol{list-style-type:none;}
+select,input,img,select{vertical-align:middle;}
+input{ font-size:12px;}
+a{ text-decoration:none; color:#000;}
+a:hover{color:#c00; text-decoration:none;}
+.clear{clear:both;}
+
+/* 大转盘样式 */
+.banner{display:block;width:95%;margin-left:auto;margin-right:auto;margin-bottom: 20px;margin-top: 1rem;}
+.banner .turnplate{display:block;width:100%;position:relative;}
+.banner .turnplate canvas.item{width:100%;}
+.banner .turnplate img.pointer{position:absolute;width:31.5%;height:42.5%;left:34.6%;top:23%;}
+
+#part1, #part2, #part3 {
+    margin-top: 1rem;
+}
+.tag-header {
+    background: url('images/tag-header.png') no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    padding: 1rem;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: #AB5A16;
+}
+.tag-header-height {
+    background: url('images/tag-header_height.png') no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    padding: 1rem;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: #AB5A16;
+}
+.main{
+    padding: 0 1rem;
+}
+.p-article {
+    margin-top: 1rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #eceaeb;
+    font-size: 0.8rem;
+}
+.p-article p.big-font{
+    font-size: 0.9rem;
+}
+.bg-orange{
+    background: #f49e2f;
+    padding: 0 6px;
+    color: #fff;
+    border-radius: 5px;
+}
+.t-orange {
+    color: #f49e2f;
+}
+.p-article .title {
+    padding: 0 0 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.btn {
+    width: 150px;
+    text-align: center;
+    margin: 1rem auto 0;
+    padding: 0.4rem 0.5rem;
+    background: url(images/btn-bg.png) no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.card {
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    background: url(images/VIP-only.png) right top no-repeat;
+    background-size: 3rem;
+    background-color: #fff;
+    margin-top: 1rem;
+    border: 1px solid #eceaeb;
+}
+.card:after {
+    content: '\20';
+    display: block;
+    clear: both;
+}
+.card .icon {
+    width: 3rem;
+    height: auto;
+    float: left;
+}
+.card .icon img{
+    width: 3rem;
+}
+.card .content {
+    width: calc(100% - 3rem);
+    padding: 0 1rem;
+    float: left;
+}
+.card-article {
+    margin-top: 0.8rem;
+}
+.card .content .title {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.card .content p{
+    color: #6c6c6c;
+}
+footer {
+    padding: 2rem 0;
+    text-align: center;
+}
+.prize-list {
+    background: #fff;
+    padding: 1rem 0;
+    border-radius: 5px;
+}
+.prize-list p.title {
+    padding: 0 0 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.prize-list .t-header {
+    background: #f49e2f;
+    color: #fff;
+    font-weight: bold;
+}
+.t-header ul:after {
+    content: '\20';
+    clear: both;
+    display: block;
+}
+.t-header ul li {
+    float: left;
+    width: 25%;
+    padding: 10px 0;
+    text-align: center;
+}
+.prize-list .t-body {
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+}
+.prize-list .t-body ul li *{
+    float: left;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+.prize-list .t-body ul li:after {
+    clear: both;
+    content: '\20';
+    display: block;
+}
+.prize-list .t-body ul li:nth-child(odd) {
+    background: #ffffff;
+}
+.prize-list .t-body ul li:nth-child(even) {
+    background: #eceaeb;
+}
+.prize-list .order{
+    width: 10%;
+}
+.prize-list .prize-name{
+    width: 30%;
+}
+.prize-list .stu-name{
+    width: 20%;
+}
+.prize-list .school{
+    width: 40%;
+}
